@@ -1,0 +1,52 @@
+/* Split day coloring */
+html[dir=rtl] .cal .cal-nc-am > span {
+  border-right-color: #909090;
+  border-top-color: #909090;
+}
+
+html[dir=rtl] .cal .cal-nc-pm > span {
+  border-left-color: #909090;
+  border-bottom-color: #909090;
+}
+
+html[dir=rtl] .cal .cal-av-am > span {
+  border-right-color: #90ee90;
+  border-top-color: #90ee90;
+}
+
+html[dir=rtl] .cal .cal-av-pm > span {
+  border-left-color: #90ee90;
+  border-bottom-color: #90ee90;
+}
+
+html[dir=rtl] .cal .cal-na-am > span {
+  border-right-color: #ffb6c1;
+  border-top-color: #ffb6c1;
+}
+
+html[dir=rtl] .cal .cal-na-pm > span {
+  border-left-color: #ffb6c1;
+  border-bottom-color: #ffb6c1;
+}
+
+html[dir=rtl] .cal .cal-opt-am > span {
+  border-right-color: #ffffe0;
+  border-top-color: #ffffe0;
+}
+
+html[dir=rtl] .cal .cal-opt-pm > span {
+  border-left-color: #ffffe0;
+  border-bottom-color: #ffffe0;
+}
+
+/* Split day dimensioning and positioning */
+.cal td > span {
+  border-left-width: 14px;
+  border-right-width: 14px;
+}
+
+.cal td > span > span {
+  left: auto;
+  right: -14px;
+}
+

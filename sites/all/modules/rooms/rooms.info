@@ -1,0 +1,22 @@
+name = Rooms
+description = Provides basic underlying functionality and configuration options used by all Rooms modules.
+core = 7.x
+php = 5.3.9
+
+files[] = includes/rooms.calendar.inc
+files[] = includes/rooms.calendar_interface.inc
+files[] = includes/rooms.event.inc
+files[] = includes/rooms.event_interface.inc
+
+package = Rooms
+
+dependencies[] = libraries (>=2.x)
+dependencies[] = jquery_update
+dependencies[] = variable
+
+; Information added by Drupal.org packaging script on 2015-01-30
+version = "7.x-1.4"
+core = "7.x"
+project = "rooms"
+datestamp = "1422616810"
+

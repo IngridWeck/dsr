@@ -1,0 +1,123 @@
+/* Month (table) */
+.cal table {
+  font-size: smaller;
+  color: #000000;
+  border-width: 1px;
+  border-color: #000000;
+  border-style: solid;
+}
+/* Month name and year (caption) */
+.cal caption {
+  font-weight: bold;
+  font-style: inherit;
+  font-size: smaller;
+}
+
+/* Weekday names (header row) */
+.cal thead th {
+  line-height: px;
+  text-align: center;
+  font-weight: bold;
+  font-style: inherit;
+  font-size: inherit;
+  color: #000000;
+  width: 28px;
+}
+
+/* Week notes (header column) */
+.cal tbody th, .cal thead th.cal-weekno-header {
+  width: 90px;
+  color: #000000;
+}
+
+/* Days (td) */
+.cal td {
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+}
+
+/* Whole day coloring */
+.cal-nc, .cal-nc > div {
+  background-color: #909090;
+}
+
+.cal-av, .cal-av > div {
+  background-color: #90ee90;
+}
+
+.cal-na, .cal-na > div {
+  background-color: #ffb6c1;
+}
+
+.cal-opt, .cal-opt > div {
+  background-color: #ffffe0;
+}
+
+/* Split day coloring */
+html[dir=ltr] .cal .cal-nc-am > span {
+  border-left-color: #909090;
+  border-top-color: #909090;
+}
+
+html[dir=ltr] .cal .cal-nc-pm > span {
+  border-right-color: #909090;
+  border-bottom-color: #909090;
+}
+
+html[dir=ltr] .cal .cal-av-am > span {
+  border-left-color: #90ee90;
+  border-top-color: #90ee90;
+}
+
+html[dir=ltr] .cal .cal-av-pm > span {
+  border-right-color: #90ee90;
+  border-bottom-color: #90ee90;
+}
+
+html[dir=ltr] .cal .cal-na-am > span {
+  border-left-color: #ffb6c1;
+  border-top-color: #ffb6c1;
+}
+
+html[dir=ltr] .cal .cal-na-pm > span {
+  border-right-color: #ffb6c1;
+  border-bottom-color: #ffb6c1;
+}
+
+html[dir=ltr] .cal .cal-opt-am > span {
+  border-left-color: #ffffe0;
+  border-top-color: #ffffe0;
+}
+
+html[dir=ltr] .cal .cal-opt-pm > span {
+  border-right-color: #ffffe0;
+  border-bottom-color: #ffffe0;
+}
+
+/* Split day dimensioning and positioning */
+.cal td > span {
+  width: 0;
+  height: 0;
+  border-left-width: 14px;
+  border-top-width: 14px;
+  border-right-width: 14px;
+  border-bottom-width: 14px;
+}
+
+.cal td > span > span {
+  top: -14px;
+  left: -14px;
+}
+
+/* Dimensions and other properties for element containing day number */
+.cal td > div, .cal td > span > span {
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  vertical-align: middle;
+}
+
