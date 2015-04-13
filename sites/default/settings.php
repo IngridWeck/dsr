@@ -217,10 +217,10 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'domaine7m',
+      'database' => 'domaine',
       'username' => 'root',
       'password' => 'Leeloo00',
-      'host' => 'localhost',
+      'host' => '127.0.0.1',
       'port' => '3306',
       'driver' => 'mysql',
       'prefix' => '',
@@ -280,7 +280,7 @@ $drupal_hash_salt = '0pVnQ0FCirZNyFfmulLllyyU9q6PXMrv1FY3yp7FhOs';
  * It is not allowed to have a trailing slash; Drupal will add it
  * for you.
  */
-# $base_url = 'http://www.example.com';  // NO trailing slash!
+$base_url = 'http://dsr.local.ing';  // NO trailing slash!
 
 /**
  * PHP settings:
@@ -356,7 +356,7 @@ ini_set('session.cookie_lifetime', 2000000);
  * - anonymous: Defines the human-readable name of anonymous users.
  * Remove the leading hash signs to enable.
  */
-# $conf['site_name'] = 'My Drupal site';
+# $conf['site_name'] = 'dsr';
 # $conf['theme_default'] = 'garland';
 # $conf['anonymous'] = 'Visitor';
 

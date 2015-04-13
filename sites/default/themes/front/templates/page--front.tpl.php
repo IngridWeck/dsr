@@ -2,28 +2,23 @@
   <div class="container-2">
     <!-- Navigation -->
     <?php
-        include 'main-menu.php';
+
+        include ("main-menu.php");
+        include ("get-mail.php");
     ?>
     <div class="diaporama">
-      <img class=" " src="<?= drupal_get_path('theme', 'front') ?>/img/3L5A2014.jpg" width="100%"/>
       <img class=" " src="<?= drupal_get_path('theme', 'front') ?>/img/3L5A2058.jpg" width="100%"/>
+      <img class=" " src="<?= drupal_get_path('theme', 'front') ?>/img/3L5A2014.jpg" width="100%"/>
       <img class=" " src="<?= drupal_get_path('theme', 'front') ?>/img/3L5A2107.jpg" width="100%"/>
       <img class=" " src="<?= drupal_get_path('theme', 'front') ?>/img/3L5A2122.jpg" width="100%"/>
       <img class=" " src="<?= drupal_get_path('theme', 'front') ?>/img/3L5A2147.jpg" width="100%"/>
       <img class=" " src="<?= drupal_get_path('theme', 'front') ?>/img/3L5A2165.jpg" width="100%"/>
       <img class=" " src="<?= drupal_get_path('theme', 'front') ?>/img/3L5A2196.jpg" width="100%"/>
       <img class=" " src="<?= drupal_get_path('theme', 'front') ?>/img/3L5A2242.jpg" width="100%"/>
-      <img class=" " src="<?= drupal_get_path('theme', 'front') ?>/img/3L5A2260.jpg" width="100%"/>
-    </div>
+     </div>
     <!-- main content-->
     <div class="front-main-content">
-      <!-- <div class="front_events">
-        <?php
-        $block = block_load('views', 'front_mariage_entreprise-block');
-        $block = _block_get_renderable_array(_block_render_blocks(array($block)));
-        print drupal_render($block);
-        ?>
-      </div> -->
+      
       <div class="front-sub-main-content">
         <div class="front-quot">
         <?php
@@ -32,14 +27,6 @@
         print drupal_render($block);
         ?>
         </div>
-        <!-- <div class="front-citation">
-        <?php
-        $block = block_load('views', 'citation-block');
-        $block = _block_get_renderable_array(_block_render_blocks(array($block)));
-        print drupal_render($block);
-        ?>
-        </div> -->
-        
         <div class="block-front-reserver">
           <div class="block-cadeau">
             <?php
@@ -49,14 +36,14 @@
             ?>
           </div>
           <div class="block-form">
-            <form action="" method="" class="front-form-fake">
+            <form action="get-mail.php" method="GET" class="front-form-fake">
               <h2>Réservez votre séjour !</h2>
               <label>Date du séjour</label>
               <input name="date" type="date" class="datepicker" placeholder="JJ/MM/AAAA"/>
               <label class="jusque">à</label>
               <input name="jusque" type="date" class="datepicker"/>
               <label>Gîte</label>
-                <select>
+                <select name="gite">
                   <option value="gai_logis">Gai Logis (5 lits)</option>
                   <option value="les_capucins">Les Capucins (22 lits)</option>
                   <option value="la_conciergerie">La Conciergerie (6 lits)</option>
@@ -88,7 +75,7 @@
 
     <!-- Page-footer -->
       <?php
-        include 'footer.php';
+        include ("footer.php");
       ?>
   </div>
 </div>

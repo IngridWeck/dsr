@@ -2,9 +2,7 @@ name 							= Front
 description 					= Custom theme.
 core = 7.x
 regions[content]       			= 'Content'
+dependencies[]                  = less
 
 stylesheets[all][]				= css/normalize.css
-stylesheets[all][] 				= css/style.less
-
-
-
+stylesheets[all][]              = less/style.css.less

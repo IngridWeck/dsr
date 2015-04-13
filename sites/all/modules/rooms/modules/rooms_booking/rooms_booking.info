@@ -29,9 +29,9 @@ files[] = views/rooms_booking_handler_unit_field.inc
 files[] = views/rooms_booking_handler_booking_operations_field.inc
 files[] = views/rooms_booking_handler_booking_type_field.inc
 
-; Information added by Drupal.org packaging script on 2015-01-30
-version = "7.x-1.4"
+; Information added by Drupal.org packaging script on 2015-03-27
+version = "7.x-1.7"
 core = "7.x"
 project = "rooms"
-datestamp = "1422616810"
+datestamp = "1427482983"
 

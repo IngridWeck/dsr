@@ -1,7 +1,7 @@
-<div class="front container">
+<div class="page container">
   <div class="container-2">
     <?php
-      include 'main-menu.php';
+    include ("main-menu.php");
     ?>
     <!-- main content-->
 
@@ -12,7 +12,7 @@
 
     <!-- Page-footer -->
     <?php
-      include 'footer.php';
+      include ("footer.php");
     ?>
   </div>
 </div>

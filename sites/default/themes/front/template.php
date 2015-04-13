@@ -11,6 +11,10 @@
     }
 
 
+    drupal_add_css(drupal_get_path('theme', 'front') . '/less/style.css.less');
+
+
+
  	function front_preprocess_html(&$variables, $hook)
  	{
         drupal_add_js(drupal_get_path('theme', 'front').'/js/launcher.js');
