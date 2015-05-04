@@ -217,9 +217,9 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'domaine',
-      'username' => 'root',
-      'password' => 'Leeloo00',
+      'database' => 'dsr',
+      'username' => 'dsr_user',
+      'password' => 'dsr_password',
       'host' => '127.0.0.1',
       'port' => '3306',
       'driver' => 'mysql',
