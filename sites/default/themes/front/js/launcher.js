@@ -9,6 +9,9 @@ jQuery(document).ready(function(){
     var formHeight=jQuery('#colorbox').height();
     jQuery(".show_cb").colorbox({inline:true, width:"50%", height: "80%"});
 
+    var formHeight=jQuery('#colorbox1').height();
+    jQuery(".show_cb1").colorbox({inline:true, width:"50%", height: "80%"});
+
 	var elementPosition = jQuery('.front-large-menu').offset();
 
 	jQuery(window).scroll(function(){
