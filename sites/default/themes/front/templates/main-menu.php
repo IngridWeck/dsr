@@ -1,5 +1,5 @@
 
-<div class="front-large-menu front-header">
+<div class="front-large-menu front-header" id="front-large-menu">
 <!--large-->
   <div  class="top-left left">
     <img class= "front-logo" src="<?= $logo ?>" alt="<?= $site_name ?>"/>

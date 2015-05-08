@@ -1,4 +1,0 @@
-<div id="one.article">
-<?= $title; ?>
-<?= render ($content['']); ?>
-</div>
