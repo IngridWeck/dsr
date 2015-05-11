@@ -3,7 +3,7 @@
 	<div class="melting-pot-relative">
 		<?=	$fields ['field_image']->content;?>
 	</div>
-	<div class="melting-pot-texte">
+	<div class="mariage">
 		<?= $fields ['title']->content; ?> 
 	</div>
 

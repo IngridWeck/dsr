@@ -16,7 +16,7 @@ jQuery(document).ready(function(){
 
 	jQuery(window).scroll(function(){
 	    if(jQuery(window).scrollTop() > elementPosition.top){
-          jQuery('.front-large-menu').css('position','fixed').css('top','0').css('width','100%').css('z-index','500').css('background-color', 'rgba(51, 51, 51, 0.1)').css('margin-left', '0').css('padding', '0');
+          jQuery('.front-large-menu').css('position','fixed').css('top','0').css('width','100%').css('z-index','500').css('background-color', 'rgba(51, 51, 51, 0.7)').css('margin-left', '0').css('padding', '0');
           jQuery('.front-logo').css('width', '110px').css('padding', '15px 20px 15px 40px');
           jQuery('h1').css('display', 'none');
           jQuery('.main-menu').css('padding-top', '0').css('margin-top', '10px');
@@ -25,7 +25,7 @@ jQuery(document).ready(function(){
 	    } 
 
 	    else {
-	        jQuery('.front-large-menu').css('position','static').css('width','').css('background-color', 'rgba(51, 51, 51, 0.3)').css('margin', '').css('padding','');
+	        jQuery('.front-large-menu').css('position','static').css('width','').css('background-color', 'rgba(51, 51, 51, 0.6)').css('margin', '').css('padding','');
 	        jQuery('.front-logo').css('width', '').css('padding', '').css('margin', '');
 	        jQuery('.main-menu').css('padding-top', '').css('margin-top', '');
 	        jQuery('h1').css('display', 'block');
@@ -34,7 +34,10 @@ jQuery(document).ready(function(){
 	    }
 	});
 
+
 });
+
+
 
 jQuery(function mailReserve() {
     var x = document.getElementById('superDate').value;
@@ -45,6 +48,8 @@ jQuery(function mailReserve() {
     var res = 'Réservation';
     document.getElementById('edit-submitted-sujet').value = res ;
 });
+
+
 
 // var screenWidth=jQuery(window).width() /2;
 // jQuery('.mariage-entreprise-image.field-content a img').css('width', screenWidth);
