@@ -19,6 +19,8 @@
  	{
         drupal_add_js(drupal_get_path('theme', 'front').'/js/launcher.js');
         drupal_add_js(drupal_get_path('theme', 'front').'/js/jquery.cycle2.min.js');
+        drupal_add_css(drupal_get_path('theme', 'front') . '/bootstrap/bootstrap.min.css');
+        drupal_add_css(drupal_get_path('theme', 'front') . '/bootstrap/bootstrap.min.js');
  	}
 
  	function front_preprocess_page(&$variables)

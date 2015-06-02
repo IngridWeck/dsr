@@ -1,1 +1,0 @@
-window.tinyMCEPreInit = {"base":"\/domaine7m\/sites\/all\/libraries\/tinymce\/jscripts\/tiny_mce","suffix":"","query":""};

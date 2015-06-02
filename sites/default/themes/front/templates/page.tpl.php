@@ -1,13 +1,17 @@
-<div class="front masterpage container" id="master-background">
-  <div class="container-2">
+<div class="front masterpage" id="master-background">
+  <div class="container-2" id="container">
     <?php
     include ("main-menu.php");
     ?>
     <!-- main content-->
-
-    <div class="main-content">
-      <?=render($page['content']); ?>
-    </div>
+      <div class="super-content-page" style="background-color:#fff">
+          <div class="wrapper-container">
+              <div id="master-page">
+                      <?=render($page['content']); ?>
+                  </div>
+              </div>
+          </div>
+      </div>
 
     <!-- Page-footer -->
     <?php

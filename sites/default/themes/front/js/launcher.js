@@ -6,6 +6,17 @@ jQuery(document).ready(function(){
         timeout:8000
     });
 
+    var contentHeight = jQuery('#container').height();
+    var screenHeight=jQuery(window).height();
+    var difference= screenHeight - contentHeight;
+    var contentCenter= jQuery('#master-page').height();
+    var totalHeight= contentCenter + difference + 40;
+
+    if (difference > 0 ){
+        jQuery('#master-page').css('height', totalHeight + 'px');
+    }
+
+
     var formHeight=jQuery('#colorbox').height();
     jQuery(".show_cb").colorbox({inline:true, width:"50%", height: "80%"});
 
@@ -34,21 +45,36 @@ jQuery(document).ready(function(){
 	    }
 	});
 
+    jQuery('#superDate').change(function(){
+        var x = jQuery(this).val();
+        var y = document.getElementById('superDate1').value;
+        var z = document.getElementById('superSelect').value;
+        var text = 'Bonjour, je souhaite réserver    ...' + z + '...     du ...' + x + '...      au ...' + y  + '...' ;
+        document.getElementById('edit-submitted-texte').innerHTML = text ;
+        var res = 'Réservation';
+        document.getElementById('edit-submitted-sujet').value = res ;
+    });
 
+    jQuery('#superDate1').change(function(){
+        var y = jQuery(this).val();
+        var x = document.getElementById('superDate').value;
+        var z = document.getElementById('superSelect').value;
+        var text = 'Bonjour, je souhaite réserver    ...' + z + '...     du ...' + x + '...      au ...' + y  + '...' ;
+        document.getElementById('edit-submitted-texte').innerHTML = text ;
+        var res = 'Réservation';
+        document.getElementById('edit-submitted-sujet').value = res ;
+    });
+
+    jQuery('#superSelect').change(function(){
+        var z = jQuery(this).val();
+        var x = document.getElementById('superDate').value;
+        var y = document.getElementById('superDate1').value;
+        var text = 'Bonjour, je souhaite réserver    ...' + z + '...     du ' + x + '...      au ' + y  + '...' ;
+        document.getElementById('edit-submitted-texte').innerHTML = text ;
+        var res = 'Réservation';
+        document.getElementById('edit-submitted-sujet').value = res ;
+    });
 });
-
-
-
-jQuery(function mailReserve() {
-    var x = document.getElementById('superDate').value;
-    var y = document.getElementById('superDate1').value;
-    var z = document.getElementById('superSelect').value;
-    var text = 'Bonjour, je souhaite réserver    ...' + z + '...     du ...' + x + '...      au ...' + y  + '...' ;
-    document.getElementById('edit-submitted-texte').innerHTML = text ;
-    var res = 'Réservation';
-    document.getElementById('edit-submitted-sujet').value = res ;
-});
-
 
 
 // var screenWidth=jQuery(window).width() /2;

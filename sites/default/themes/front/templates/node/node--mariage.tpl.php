@@ -1,5 +1,5 @@
 <div id="one-mariage">
-    <div class="slider">
+    <div class="slider-mariage">
         <?= render ($content['field_image']); ?>
     </div>
     <div class="content-page">
@@ -7,7 +7,7 @@
         <p class="contenu-texte"><?= render ($content['field_text2']); ?></p>
     </div>
 
-    <div class="melting-pot">
+    <div class="melting-pot liens-mariage">
         <div class="title">
             <div class="underline"><h3>Quelques suggestions</h3></div>
             <p>Nos liens et contacts utiles pour organiser votre journée!</p>
